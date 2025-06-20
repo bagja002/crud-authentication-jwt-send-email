@@ -1,0 +1,39 @@
+# CRUD Authentication JWT with Email Notification
+
+Aplikasi backend sederhana menggunakan **Go Fiber** yang menyediakan fitur:
+
+- **CRUD User** (Create, Read, Update, Delete)
+- **Authentication** dengan JWT (JSON Web Token)
+- **Kirim Email** notifikasi saat registrasi berhasil
+
+---
+
+## 🚀 Fitur Utama
+
+- Registrasi user dengan password di-hash menggunakan `bcrypt`
+- Login user dan generate token JWT untuk otentikasi
+- Proteksi endpoint menggunakan middleware JWT
+- Kirim email konfirmasi registrasi secara asynchronous menggunakan `gomail`
+- Contoh penggunaan goroutine untuk mengirim email tanpa menunggu selesai
+- Integrasi database MySQL menggunakan GORM dengan auto migration
+
+---
+
+## 🛠 Teknologi
+
+- Go 1.20+
+- [Fiber](https://gofiber.io/) (Web framework)
+- [GORM](https://gorm.io/) (ORM MySQL)
+- [gomail](https://github.com/go-gomail/gomail) (SMTP email)
+- [JWT](https://github.com/golang-jwt/jwt) (Token Authentication)
+
+---
+
+## 🔧 Setup dan Menjalankan Aplikasi
+
+1. Clone repository
+
+```bash
+git clone https://github.com/bagja002/crud-authentication-jwt-send-email.git
+cd crud-authentication-jwt-send-email
+g
