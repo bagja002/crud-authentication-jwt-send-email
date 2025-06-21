@@ -36,4 +36,5 @@ func main() {
 	app.Get("/pelangganById", middleware.JwtProtect(), controllers.GetDataPelangganById)
 
 	app.Listen(":9000")
+
 }
